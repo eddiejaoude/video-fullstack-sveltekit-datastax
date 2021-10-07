@@ -1,0 +1,20 @@
+{
+	"name": "svelte-datatax-video",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"preview": "svelte-kit preview"
+	},
+	"devDependencies": {
+		"@sveltejs/kit": "next",
+		"svelte": "^3.42.6",
+		"sass": "^1.42.1",
+		"svelte-preprocess": "^4.9.5",
+		"bootstrap": "^5.1.1"
+	},
+	"type": "module",
+	"dependencies": {
+		"@astrajs/collections": "^0.2.1"
+	}
+}
