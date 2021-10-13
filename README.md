@@ -1,38 +1,19 @@
-# create-svelte
+## Fullstack app
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+Using
+- SvelteKit (Svelte)
+- DataStax's cloud NoSQL database Astra DB http://links.eddiejaoude.io/t/rcCBNLIVpXlF
 
-## Creating a project
+In this tutorial you will learn how to build a fullstack app using SvelteKit (Svelte) with DataStax's cloud NoSQL database Astra DB. The features we will be building are:
 
-If you're seeing this, you've probably already done this step. Congrats!
+- list developers
+- create developer
+- filter developers
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+The web app will be a single page; with search at the top, followed by the form to create a developer, then below both of the forms will be a list of the saved developers. The web app will load the list of events over the RESTful API using a GET request, which is the same for the search form. When submitting a new event via the form, the web app will send a RESTful POST request to the API which will save the body of the POST request in the database.
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+By using these open source tools such as SvelteKit, Bootstrap, RESTful APIs and NoSQL database, you will be gaining a foundation for making most apps, allowing you to create your ideas into real projects.
 
-> Note: the `@next` is temporary
+YouTube Video https://www.youtube.com/watch?v=0wk1DlprWfc
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+![screenshot](https://user-images.githubusercontent.com/624760/137135157-27757e0d-4ed0-4530-b24b-9a6bda1c8f7b.png)
